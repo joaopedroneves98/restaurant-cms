@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "restaurant",
+  "info": {
+    "name": "restaurant",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "name": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "address": {
+      "required": true,
+      "type": "string"
+    },
+    "description": {
+      "required": true,
+      "type": "text"
+    },
+    "chef": {
+      "model": "chef"
+    }
+  }
+}

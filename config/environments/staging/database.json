@@ -1,0 +1,14 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "uri": "mongodb://strapi:strapi123@cms-shard-00-00-8lfdm.mongodb.net:27017,cms-shard-00-01-8lfdm.mongodb.net:27017,cms-shard-00-02-8lfdm.mongodb.net:27017/test?ssl=true&replicaSet=CMS-shard-0&authSource=admin&retryWrites=true&w=majority"
+      },
+      "options": {
+        "ssl": true
+      }
+    }
+  }
+}
