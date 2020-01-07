@@ -1,0 +1,16 @@
+{
+  "info": {
+    "name": "menu",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "menuoption": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page-components.menu-option"
+    }
+  },
+  "connection": "default",
+  "collectionName": "components_page_components_menus"
+}

@@ -1,0 +1,22 @@
+{
+  "connection": "default",
+  "collectionName": "headers",
+  "info": {
+    "name": "header"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "menu": {
+      "type": "dynamiczone",
+      "components": [
+        "page-components.menu"
+      ]
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

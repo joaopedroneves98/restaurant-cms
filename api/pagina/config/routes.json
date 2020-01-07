@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/paginas",
+      "handler": "pagina.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/paginas/count",
+      "handler": "pagina.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/paginas/:id",
+      "handler": "pagina.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/paginas",
+      "handler": "pagina.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/paginas/:id",
+      "handler": "pagina.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/paginas/:id",
+      "handler": "pagina.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

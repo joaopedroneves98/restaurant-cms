@@ -1,0 +1,26 @@
+{
+  "connection": "default",
+  "collectionName": "paginas",
+  "info": {
+    "name": "page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "menu": {
+      "type": "dynamiczone",
+      "components": [
+        "page-components.menu",
+        "page-components.card"
+      ]
+    },
+    "text": {
+      "type": "richtext"
+    }
+  }
+}

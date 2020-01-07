@@ -1,0 +1,17 @@
+{
+  "info": {
+    "name": "menu-option",
+    "icon": "angle-right"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  },
+  "connection": "default",
+  "collectionName": "components_page_components_menu_options"
+}
