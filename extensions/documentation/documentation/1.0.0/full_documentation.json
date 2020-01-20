@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "01/07/2020 5:03:45 PM"
+    "x-generation-date": "01/20/2020 10:48:41 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4393,7 +4393,7 @@
           "titulo": {
             "type": "string"
           },
-          "menu": {
+          "components": {
             "type": "array",
             "items": {
               "oneOf": [
@@ -4403,7 +4403,8 @@
                       "type": "string",
                       "enum": [
                         "page-components.menu",
-                        "page-components.card"
+                        "page-components.card",
+                        "page-components.text-card"
                       ]
                     },
                     "id": {
@@ -4440,7 +4441,8 @@
                       "type": "string",
                       "enum": [
                         "page-components.menu",
-                        "page-components.card"
+                        "page-components.card",
+                        "page-components.text-card"
                       ]
                     },
                     "id": {
@@ -4452,49 +4454,53 @@
                     "description": {
                       "type": "string"
                     },
-                    "image": {
-                      "required": [
-                        "id",
-                        "name",
-                        "hash",
-                        "mime",
-                        "size",
-                        "url",
-                        "provider"
-                      ],
-                      "properties": {
-                        "id": {
-                          "type": "string"
-                        },
-                        "name": {
-                          "type": "string"
-                        },
-                        "hash": {
-                          "type": "string"
-                        },
-                        "sha256": {
-                          "type": "string"
-                        },
-                        "ext": {
-                          "type": "string"
-                        },
-                        "mime": {
-                          "type": "string"
-                        },
-                        "size": {
-                          "type": "number"
-                        },
-                        "url": {
-                          "type": "string"
-                        },
-                        "provider": {
-                          "type": "string"
-                        },
-                        "provider_metadata": {
-                          "type": "object"
-                        },
-                        "related": {
-                          "type": "string"
+                    "address": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "page-components.menu",
+                        "page-components.card",
+                        "page-components.text-card"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "subtitle": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "cardaction": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "url": {
+                            "type": "string"
+                          }
                         }
                       }
                     }
@@ -4506,7 +4512,10 @@
               ]
             }
           },
-          "text": {
+          "description": {
+            "type": "string"
+          },
+          "slug": {
             "type": "string"
           }
         }
@@ -4516,7 +4525,7 @@
           "titulo": {
             "type": "string"
           },
-          "menu": {
+          "components": {
             "type": "array",
             "items": {
               "oneOf": [
@@ -4526,7 +4535,8 @@
                       "type": "string",
                       "enum": [
                         "page-components.menu",
-                        "page-components.card"
+                        "page-components.card",
+                        "page-components.text-card"
                       ]
                     },
                     "id": {
@@ -4563,7 +4573,8 @@
                       "type": "string",
                       "enum": [
                         "page-components.menu",
-                        "page-components.card"
+                        "page-components.card",
+                        "page-components.text-card"
                       ]
                     },
                     "id": {
@@ -4575,49 +4586,53 @@
                     "description": {
                       "type": "string"
                     },
-                    "image": {
-                      "required": [
-                        "id",
-                        "name",
-                        "hash",
-                        "mime",
-                        "size",
-                        "url",
-                        "provider"
-                      ],
-                      "properties": {
-                        "id": {
-                          "type": "string"
-                        },
-                        "name": {
-                          "type": "string"
-                        },
-                        "hash": {
-                          "type": "string"
-                        },
-                        "sha256": {
-                          "type": "string"
-                        },
-                        "ext": {
-                          "type": "string"
-                        },
-                        "mime": {
-                          "type": "string"
-                        },
-                        "size": {
-                          "type": "number"
-                        },
-                        "url": {
-                          "type": "string"
-                        },
-                        "provider": {
-                          "type": "string"
-                        },
-                        "provider_metadata": {
-                          "type": "object"
-                        },
-                        "related": {
-                          "type": "string"
+                    "address": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "page-components.menu",
+                        "page-components.card",
+                        "page-components.text-card"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "subtitle": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "cardaction": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "url": {
+                            "type": "string"
+                          }
                         }
                       }
                     }
@@ -4629,7 +4644,10 @@
               ]
             }
           },
-          "text": {
+          "description": {
+            "type": "string"
+          },
+          "slug": {
             "type": "string"
           }
         }

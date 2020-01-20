@@ -1,6 +1,8 @@
 {
+  "connection": "default",
+  "collectionName": "components_page_components_cards",
   "info": {
-    "name": "card",
+    "name": "restaurant-card",
     "icon": "list"
   },
   "options": {},
@@ -11,13 +13,8 @@
     "description": {
       "type": "richtext"
     },
-    "image": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload",
-      "required": false
+    "address": {
+      "type": "string"
     }
-  },
-  "connection": "default",
-  "collectionName": "components_page_components_cards"
+  }
 }

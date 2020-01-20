@@ -1,0 +1,17 @@
+{
+  "info": {
+    "name": "card-action",
+    "icon": "check-circle"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "connection": "default",
+  "collectionName": "components_page_components_card_actions"
+}

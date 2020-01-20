@@ -1,0 +1,25 @@
+{
+  "info": {
+    "name": "text-card",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "cardaction": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page-components.card-action"
+    }
+  },
+  "connection": "default",
+  "collectionName": "components_page_components_text_cards"
+}
